@@ -1,0 +1,21 @@
+@model LojaVirtual.Models.Produto
+
+<h3>Produto vizualizaar</h3>
+
+<!-- Tou aqui a usar Razor -->
+@{
+    string nomeEmpresa = "PandaPandaSolutions";
+}
+
+
+<br/>
+<h2>Produto</h2>
+<b>Id: </b> @Model.Id <br/>
+<b>Nome: </b> @Model.Nome <br/>
+<b>Descricao: </b> @Model.Descricao <br/>
+<b>Valor: </b> @Model.Valor.ToString("C") <br/>
+
+
+
+<br/>
+Todos os direitos reservados <b>@nomeEmpresa&copy;</b> @DateTime.Now
